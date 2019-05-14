@@ -1,4 +1,4 @@
-const owner = '<nmarini>';
+const owner = '<YOUR_USERNAME>';
 const baseURL = 'https://api.github.com';
 function getToken() {
   //change to your token to run in browser, but set
