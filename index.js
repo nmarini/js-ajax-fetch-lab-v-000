@@ -30,7 +30,7 @@ function createIssue() {
   const repo = `${owner}/js-ajax-fetch-lab`;
   const url = `${baseURL}/repos/${repo}/issues`;
   const postData = {
-    title: document.getElementById('title').value
+    title: document.getElementById('title').value,
     body: document.getElementById('body').value
   }
 
