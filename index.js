@@ -3,8 +3,7 @@ const baseURL = 'https://api.github.com';
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  const token = c92d34b99b3130c0cae7c82af1a9ca02e52593a7
-  return token
+  return ''
 
 }
 
