@@ -32,6 +32,7 @@ function createIssue() {
     title: document.getElementById('title').value;
     body: document.getElementById('body').value;
   }
+
   fetch(url, {
     method: 'POST',
     headers: {
@@ -39,7 +40,7 @@ function createIssue() {
     }
   })
     .then(res => res.json())
-    .then(json => showResults(json));
+    .then(json => getIssues(json));
 }
 }
 
