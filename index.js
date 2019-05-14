@@ -48,6 +48,10 @@ function getIssues() {
   const repo = `${owner}/js-ajax-fetch-lab`;
   const url = `${baseURL}/repos/${repo}/issues`;
 
-  fetch
+  fetch(url, {
+    headers: {
+      Authorization: `token ${getToken()}`
+    }
+  })
 
 }
