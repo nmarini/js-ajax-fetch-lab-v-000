@@ -1,4 +1,5 @@
 const owner = nmarini
+const baseURL = 'https://api.github.com';
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
@@ -7,7 +8,7 @@ function getToken() {
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
-  fetch(`https://api.github.com/repos/${owner}/${repo}/forks`, {
+  fetch(`${baseURL}/repos/${owner}/${repo}/forks`, {
     method: 'POST',
     headers: {
       Authorization: `token ${getToken()}`
