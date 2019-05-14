@@ -27,7 +27,7 @@ function showResults(json) {
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
   const repo = `${owner}/js-ajax-fetch-lab`;
-  const url = `${baseURL}/repos/${owner}/${repo}/issues`;
+  const url = `${baseURL}/repos/${repo}/issues`;
   const postData = {
     title: document.getElementById('title').value;
     body: document.getElementById('body').value;
@@ -46,7 +46,7 @@ function createIssue() {
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
   const repo = `${owner}/js-ajax-fetch-lab`;
-  const url = `${baseURL}/repos/${owner}/${repo}/issues`;
+  const url = `${baseURL}/repos/${repo}/issues`;
 
   fetch
 
