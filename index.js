@@ -49,5 +49,5 @@ function getIssues() {
   const url = `${baseURL}/repos/${owner}/${repo}/issues`;
 
   fetch
-  
+
 }
